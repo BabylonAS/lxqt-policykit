@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-
 project(lxqt-policykit-agent)
 
 include(GNUInstallDirs)
@@ -23,10 +21,6 @@ find_package(Qt5Widgets REQUIRED)
 message(STATUS "Building with Qt${Qt5Core_VERSION}")
 
 find_package(lxqt REQUIRED)
-
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
 
 # Patch Version
 set(LXQT_POLKITAGENT_PATCH_VERSION 0)
